@@ -11,18 +11,22 @@ class Deck:
     # A function for creating a deck
     # The deck will contain cards of Suits: Heart, Spade, Diamond, Clubs  and Ranks: Ace, 2-9, T, Jack, Queen, King
     def deck_cards(self):
+        pass
 
 
 
 class Deal:
 
-    def __init__(self):
-        pass
+    def __init__(self, deck):
+        self.deck = deck
 
     # A function for creating player and dealers hands
     # The player and dealer will get 2 cards initially
 
     def deal_cards(self, cards):
+        dealer = [self.deck.pop(), self.deck.pop()]
+        player = [self.deck.pop(), self.deck.pop()]
+        return [dealer, player]
 
 
 
